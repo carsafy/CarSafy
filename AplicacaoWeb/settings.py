@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '192.168.86.79', #IP PC do Tiago, Wif: casa do Tiago
     '192.168.15.191', #IP PC do Lucas, Wifi: casa do lucas
+    '192.168.43.70', #IP PC do Tiago, Wifi: telefone do Tiago
 ]
 
 
@@ -127,5 +128,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    'meus_statics',
+    'core/statics',
 ]
