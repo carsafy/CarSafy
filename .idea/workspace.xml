@@ -2,34 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="350e9054-ae44-484c-bf55-918bd9ec90f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/AplicacaoWeb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AplicacaoWeb/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cotacao/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cotacao/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cotacao/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/cotacao/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cotacao/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cotacao/migrations/0002_auto_20180923_2013.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cotacao/migrations/0003_seguradodados_data_nascimento.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cotacao/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cotacao/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/Shortcut-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/alagamento.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/app.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/bradesco.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/carro-protegido.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/carro-reserva.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/chaveiro.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/dc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/facebook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/instagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/porto-seguro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/pt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/sompo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/tokio.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_statics/core/img/whatsapp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_templates/core/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_templates/core/faq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_templates/core/form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_templates/core/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meus_templates/cotacao/cotacao.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,35 +20,37 @@
     <session id="963757122">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
-          <entry key="py" value="16" />
+          <entry key="html" value="4" />
+          <entry key="py" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="Python" value="16" />
+          <entry key="HTML" value="4" />
+          <entry key="Python" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="19" />
-          <entry key="py" value="1714" />
+          <entry key="py" value="4150" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="19" />
-          <entry key="Python" value="1714" />
+          <entry key="Python" value="4150" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -80,10 +61,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cotacao/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306">
-              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+            <state relative-caret-position="-850">
+              <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
               <folding>
-                <marker date="1537752980637" expanded="true" signature="1388:2001" ph="..." />
+                <marker date="1538074360085" expanded="true" signature="1403:4496" ph="..." />
               </folding>
             </state>
           </provider>
@@ -92,11 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cotacao/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -106,6 +84,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>seguradoinfo</find>
+      <find>tipo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -149,7 +128,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,18 +138,13 @@
             <path>
               <item name="CarSafy" type="b2602c69:ProjectViewProjectNode" />
               <item name="CarSafy" type="462c0819:PsiDirectoryNode" />
-              <item name="AplicacaoWeb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CarSafy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CarSafy" type="462c0819:PsiDirectoryNode" />
               <item name="cotacao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CarSafy" type="b2602c69:ProjectViewProjectNode" />
               <item name="CarSafy" type="462c0819:PsiDirectoryNode" />
               <item name="cotacao" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CarSafy" type="b2602c69:ProjectViewProjectNode" />
@@ -181,6 +154,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,7 +189,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -227,9 +200,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2672131" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.34918034" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -317,13 +290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cotacao/templates/cotacao/cotacao.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files (x86)/Python37-32/Lib/site-packages/django/db/models/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -344,23 +310,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cotacao/templates/cotacao/cotacao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/templates/core/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/templates/core/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cotacao/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        <state relative-caret-position="-850">
+          <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
           <folding>
-            <marker date="1537752980637" expanded="true" signature="1388:2001" ph="..." />
+            <marker date="1538074360085" expanded="true" signature="1403:4496" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cotacao/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
