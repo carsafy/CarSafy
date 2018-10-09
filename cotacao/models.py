@@ -18,11 +18,11 @@ class Email(models.Model):
 class Segurado(models.Model):
     cpf = models.CharField(max_length=14)
     pessoa_fisica = models.BooleanField()
-    telefones = models.ManyToManyField(Telefone, verbose_name="Telefone", blank=True, null=True)
-    emails = models.ManyToManyField(Email, verbose_name="Email", blank=True, null=True)
+    telefones = models.ManyToManyField(Telefone, verbose_name="Telefone", blank=True)
+    emails = models.ManyToManyField(Email, verbose_name="Email", blank=True)
 
     def __str__(self):
-        return str(self.cpf) + " - " + str(self.seguradodados_set.last())
+        return str(self.cpf) + " - " + str(self.seguradodados_set.last().nome)
 
 
 # demais informações do Segurado
@@ -63,8 +63,16 @@ class Seguro(models.Model):
     bonus = models.PositiveIntegerField(blank=True, null=True)
     qnt_sinistro = models.PositiveIntegerField(verbose_name="Quantidade de Sinistro", blank=True, null=True)
 
+    def __str__(self):
+        try:
+            a = self.veiculo
+        except Exception as e:
+            return "Nâo utilizado" + " - " + str(self.inicio_vigencia)
+        else:
+            return str(self.veiculo)
 
-class PrincipalCondutor(models.Model):
+
+class Condutor(models.Model):
     relacao = models.CharField(max_length=15)
     cpf = models.CharField(max_length=11)
     nome = models.CharField(max_length=100)
@@ -104,7 +112,7 @@ class Veiculo(models.Model):
         on_delete=models.PROTECT
     )
     principal_condutor = models.OneToOneField(
-        PrincipalCondutor,
+        Condutor,
         on_delete=models.PROTECT,
         blank=True, null=True
     )
