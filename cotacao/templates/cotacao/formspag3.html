@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+	<title>Dados do Veículo</title>
+</head>
+<body>
+
+	<form>
+		
+		Placa<br>
+		<input type="text" name="placa" maxlength="7"><br>
+		Chassi<br>
+		<input type="text" name="chassi"><br>
+		Marca<br>
+		<select name="marcas" required>
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+		</select><br>
+
+		Ano Modelo<br>
+        <input type="text" name="anomodelo" maxlength="4" required><br>
+        <!-- se ano==ano atual + ou - 1-->
+        	<input type="checkbox" name="carronovo" value="false">Carro Novo?<br>
+        Ano Fabricação<br>
+        <input type="text" name="anofab" maxlength="4" required><br>
+
+        Modelo<br>
+        <select name="modelo" required>
+			<option value="A">A</option>
+			<option value="B">B</option>
+		</select><br>
+
+		Veiculo Alienado?<br>
+		<input type="radio" name="Alienado" value="Sim"> Sim
+  		<input type="radio" name="Alienado" value="Nao" checked> Nao<br>
+
+  		<input type="submit" name="enviar" value="Prosseguir">
+  		
+	</form>
+
+</body>
+
+
+
+</html>

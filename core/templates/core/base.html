@@ -15,8 +15,7 @@
 	<!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Google Analitcs -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125829147-1"></script>
@@ -60,95 +59,107 @@
 		})();
 	</script>
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <footer>
         <!--Seção do menu inferior-->
-        <section>
-            <div>
-                <ul>
-                    <li>
-                        <p>Outros Seguros</p>
-                    </li>
-                    <li>
-                        <a href="http://segurosjm.com.br/seguro_saude.html"	target="_blank">Plano de Saúde</a>
-                    </li>
-                    <li>
-                        <a href="http://segurosjm.com.br/seguro_odonto.html" target="_blank">Plano Odontológico</a>
-                    </li>
-                    <li>
-                        <a href="http://segurosjm.com.br/seguro_viagem.html" target="_blank">Seguro Viagem</a>
-                    </li>
-                    <li>
-                        <a href="http://segurosjm.com.br/seguro_vida.html" target="_blank">Seguro de Vida</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <p>Seguradoras</p>
-                    </li>
-                    <li>
-                        <a href="https://www.portoseguro.com.br/" target="_blank">Porto Seguro</a>
-                    </li>
-                    <li>
-                        <a href="http://www.bradescoseguros.com.br" target="_blank">Bradesco Seguros</a>
-                    </li>
-                    <li>
-                        <a href="http://www.tokiomarine.com.br/" target="_blank">Tokio Marine</a>
-                    </li>
-                    <li>
-                        <a href="https://sompo.com.br/" target="_blank">Sompo</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <p>Links Úteis</p>
-                    </li>
-                    <li>
-                        <a href="http://www.susep.gov.br/">SUSEP</a>
-                    </li>
-                    <li>
-                        <a href="http://www.tudosobreseguros.org.br/">Tudo sobre Seguros</a>
-                    </li>
-                    <li>
-                        <a href="http://www.detran.df.gov.br/">DETRANDF</a>
-                    </li>
-                    <li>
-                        <a href="http://veiculos.fipe.org.br/">Tabela FIPE</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/">
-                            <img src='{% static "facebook.png" %}' alt="Facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/">
-                            <img src='{% static "instagram.png" %}' alt="Instagram">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://goo.gl/gCSVLh">
-                            <img src='{% static "whatsapp.png" %}' alt="Whatsapp">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section>
+        <div style="height:60vh" class="blue-grey darken-4">
+            <section>
+                <div class="row">
+                    <div class="col l2">
+                        <ul>
+                            <li>
+                                <p>Outros Seguros</p>
+                            </li>
+                            <li>
+                                <a href="http://segurosjm.com.br/seguro_saude.html"	target="_blank">Plano de Saúde</a>
+                            </li>
+                            <li>
+                                <a href="http://segurosjm.com.br/seguro_odonto.html" target="_blank">Plano Odontológico</a>
+                            </li>
+                            <li>
+                                <a href="http://segurosjm.com.br/seguro_viagem.html" target="_blank">Seguro Viagem</a>
+                            </li>
+                            <li>
+                                <a href="http://segurosjm.com.br/seguro_vida.html" target="_blank">Seguro de Vida</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l2">
+                        <ul>
+                            <li>
+                                <p>Seguradoras</p>
+                            </li>
+                            <li>
+                                <a href="https://www.portoseguro.com.br/" target="_blank">Porto Seguro</a>
+                            </li>
+                            <li>
+                                <a href="http://www.bradescoseguros.com.br" target="_blank">Bradesco Seguros</a>
+                            </li>
+                            <li>
+                                <a href="http://www.tokiomarine.com.br/" target="_blank">Tokio Marine</a>
+                            </li>
+                            <li>
+                                <a href="https://sompo.com.br/" target="_blank">Sompo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l2">
+                        <ul>
+                            <li>
+                                <p>Links Úteis</p>
+                            </li>
+                            <li>
+                                <a href="http://www.susep.gov.br/">SUSEP</a>
+                            </li>
+                            <li>
+                                <a href="http://www.tudosobreseguros.org.br/">Tudo sobre Seguros</a>
+                            </li>
+                            <li>
+                                <a href="http://www.detran.df.gov.br/">DETRANDF</a>
+                            </li>
+                            <li>
+                                <a href="http://veiculos.fipe.org.br/">Tabela FIPE</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l6">
+                        <div class="row">
+                            <ul>
+                                <div class="col l4 right-align">
+                                    <li>
+                                        <a href="https://www.facebook.com/">
+                                            <img class="responsive-img" src='{% static "core/img/facebook.png" %}' alt="Facebook">
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="col l4 right-align">
+                                    <li>
+                                        <a href="https://www.instagram.com/">
+                                            <img class="responsive-img" src='{% static "core/img/instagram.png" %}' alt="Instagram">
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="col l4 right-align">
+                                    <li>
+                                        <a href="https://goo.gl/gCSVLh">
+                                            <img class="responsive-img" src='{% static "core/img/whatsapp.png" %}' alt="Whatsapp">
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
                 <div>
-                <h3>Direitos</h3>
-                <p>Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.</p>
-            </div>
-        </section>
+                    <h3>Direitos</h3>
+                 <p>Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.</p>
+                </div>
+            </section>
+        </div>
     </footer>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     
 </body>

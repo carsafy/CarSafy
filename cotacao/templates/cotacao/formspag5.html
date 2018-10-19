@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+	<title>Dados das Analises de Risco</title>
+</head>
+<body>
+
+	<form>
+		Garagem na residência?<br>
+		<input type="radio" name="garresd" value="Sim"> Sim
+  		<input type="radio" name="garresd" value="Nao" checked> Nao<br>
+        Garagem no Curso?<br>
+        <input type="radio" name="garcurs" value="Sim"> Sim
+  		<input type="radio" name="garcurs" value="Nao" checked> Nao<br>
+        Garagem no Trabalho?<br>
+        <input type="radio" name="gartrab" value="Sim"> Sim
+  		<input type="radio" name="gartrab" value="Nao" checked> Nao<br>
+		<!--Se profissão ==estudante-> GC=Não && GT= Não trabalha 
+		Se profissão != estudante ->: GC=Não estuda && GT=Não;--> 
+                
+		Utilização do Veículo<br>
+		<select name="relacao" required>
+					<option value="A">A</option>
+					<option value="B">B</option>
+		</select><br>
+
+
+		Quantidade de Veículos na Residência<br>
+		<input type="number" name="Nvel" min="0"><br>
+        
+        Distancia do Serviço<br>
+        <input type="text" name="disserv"><br>
+        Km mensal<br>
+		<input type="text" name="kmensal"><br>
+        
+        vitima de roubo/furto<br>
+        <input type="radio" name="robfurt" value="Sim"> Sim
+  		<input type="radio" name="robfurt" value="Nao" checked> Nao<br>
+
+	</form>
+
+</body>
+</html>

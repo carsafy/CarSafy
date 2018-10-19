@@ -33,7 +33,7 @@
 	<main>
 	
 	<!-- {/literal} END JIVOSITE CODE -->
-		<div class="blue lighten-4" style="height:91vh">
+		<div class="pink lighten-4" style="height:91vh">
 			
 			<button style="margin-top: 50px"><a href="cotacao"> Fazer cotação </a></button>
 			<h1>Faça a cotação do seu veículo</h1>	
@@ -43,11 +43,11 @@
 		<div style="height:100vh">
 				
 				<h2 class="center-align">Coberturas básicas</h2>
-				<div class="row">		
+				<div class="row center-aling">		
 					<div class="col 3">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src='{% static "app.svg" %}' alt="Acidente Pessoal de Passageiros" width="150px" height="150px">
+								<img class="activator" src='{% static "core/img/app.svg" %}' alt="Acidente Pessoal de Passageiros" width="150px" height="150px">
 							</div>
 							<div class="card-content">
 								<span class="card-content activator grey-text text-darken-4">Acidente Pessoal de Passageiros<i class="material-icons right">more_vert</i></span>		
@@ -76,7 +76,7 @@
 					<div class="col 3">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img src='{% static "pt.svg"%}' alt="Perca Total" width="150px" height="150px">										</div>
+								<img src='{% static "core/img/pt.svg"%}' alt="Perca Total" width="150px" height="150px">										</div>
 							<div class="card-content">
 								<span class="card-content activator grey-text text-darken-4">Perca Total<i class="material-icons right">more_vert</i></span>		
 							</div>
@@ -90,7 +90,7 @@
 					<div class="col 3">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img src='{% static "dc.svg" %}' alt="Danos Corporais a Terceiros" width="150px" height="150px">										</div>
+								<img src='{% static "core/img/dc.svg" %}' alt="Danos Corporais a Terceiros" width="150px" height="150px">										</div>
 							<div class="card-content">
 								<span class="card-content activator grey-text text-darken-4">Danos Corporais a Terceiros<i class="material-icons right">more_vert</i></span>		
 							</div>
@@ -107,7 +107,7 @@
 							<div class="col 6">
 								<div class="card">
 									<div class="card-image waves-effect waves-block waves-light">
-										<img src='{% static "carro-reserva.svg"%}' alt="Carro Reserva" width="150px" height="150px">
+										<img src='{% static "core/img/carro-reserva.svg"%}' alt="Carro Reserva" width="150px" height="150px">
 									</div>
 									<div class="card-content">
 										<span class="card-content activator grey-text text-darken-4">Carro Reserva<i class="material-icons right">more_vert</i></span>		
@@ -121,7 +121,7 @@
 							<div class="col 3">
 								<div class="card">
 									<div class="card-image waves-effect waves-block waves-light">
-										<img src='{% static "chaveiro.svg"%}' alt="Chaveiro" width="150px" height="150px">
+										<img src='{% static "core/img/chaveiro.svg"%}' alt="Chaveiro" width="150px" height="150px">
 									</div>
 									<div class="card-content">
 										<span class="card-content activator grey-text text-darken-4">Chaveiro<i class="material-icons right">more_vert</i></span>		
@@ -138,46 +138,64 @@
 		</div>
 
 		<!--Texto sobre informações-->
-		<section>
-			<h2>Porque fazer um seguro auto?</h2>
-			<div>
-				<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-			</div>
-			<div>
-				<img src='{% static "carro-protegido.jpg"%}' alt="Porque fazer seguro auto">
-			</div>
-		</section>
 
-		<br><hr><br>
-
+		<div class="cyan lighten-1 valign-wrapper" style="height:100vh">
+			<section>
+				<div class="row">
+					<div class="col 9 offset-l1">
+						<h2 class="white-text">Porque fazer um seguro auto?</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div style="font-size: 25px" class="col l8 white-text">
+						<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+					</div>
+					<div class="col l4">
+						<img class="responsive-img" src='{% static "core/img/carro-protegido.jpg"%}' alt="Porque fazer seguro auto">
+					</div>
+				</div>
+			</section>
+		</div>
+		
 		<!--Seguradoras parceiras-->
-		<section>
-			<h2>Seguradoras parceiras</h2>
-			<ul>
-				<li>
-					<a href="https://www.portoseguro.com.br/" target="_blank">
-						<img src="../img/porto-seguro.jpg" alt="Porto Seguro" height="100px">
-					</a>
-				</li>
-				<li>
-					<a href="http://www.bradescoseguros.com.br" target="_blank">
-						<img src="../img/bradesco.png" alt="Brasdesco Seguros" height="100px">
-					</a>
-				</li>
-				<li>
-					<a href="http://www.tokiomarine.com.br/" target="_blank">
-						<img src="../img/tokio.jpg" alt="Toko Marine"	height="100px">
-					</a>
-				</li>
-				<li>
-					<a href="https://sompo.com.br/" target="_blank">
-						<img src="../img/sompo.png" alt="Sompo" height="100px">
-					</a>
-				</li>
-			</ul>
-		</section>
+		<div style="height:80vh">
+			<section>
+				<h2 style="padding: 40px" class="center-align">Seguradoras parceiras</h2>
+				<ul>
+					<div class="row center-align">
+						<div style="padding: 40px" class="col l6  left-align valign-wrapper">
+							<li>
+								<a href="https://www.portoseguro.com.br/" target="_blank" >
+									<img class="responsive-img right-align" src='{% static "core/img/porto-seguro.jpg"%}' alt="Porto Seguro" width="100px">
+								</a>
+							</li>
+						</div>
+						<div style="padding: 40px" class="col l6 left-align left-align">
+							<li>
+								<a href="http://www.bradescoseguros.com.br" target="_blank">
+									<img class="responsive-img" src='{% static "core/img/bradesco.png"%}' alt="Brasdesco Seguros" width="540px">
+								</a>
+							</li>
+						</div>
+					</div>
+					<div class="row center-align">
+						<div class="col l6  left-align valign-wrapper">
+							<li>
+								<a href="http://www.tokiomarine.com.br/" target="_blank">
+									<img src='{% static "core/img/tokio.jpg"%}' alt="Toko Marine"	height="100px">
+								</a>
+							</li>
+						</div>
+						<div class="col l6 left-align left-align">
+							<li>
+								<a href="https://sompo.com.br/" target="_blank">
+									<img src='{% static "core/img/sompo.png"%}' alt="Sompo" height="100px">
+								</a>
+							</li>
+						</div>
+					</div>
+				</ul>
+			</section>
+		</div>
 	</main>
-
-	<br><br><hr><br>
-
-{% endblock %}
+	{% endblock %}

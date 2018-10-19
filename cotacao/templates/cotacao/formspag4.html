@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+	<title>Dados dos Condutores</title>
+</head>
+<body>
+		<form>
+			O cliente é o principal condutor?<br>
+              <!--Se sim: copiar dados-->
+            <input type="radio" name="clientmain" value="Sim" checked> Sim
+  			<input type="radio" name="clientmain" value="Nao"> Nao<br>
+             <!--Se não: copiar dados-->
+            
+	            Nome<br>
+	            <input type="text" name="Nomeprincipal" maxlength="50" required=""><br>
+				Data de Nascimento<br>
+				<input type="date" name="bday1" required><br>
+				CPF<br>
+				<input type="text" name="cpf/cnpj" required><br>
+				Sexo<br>
+				<input type="radio" name="gender1" value="male" checked> Masculino
+	  			<input type="radio" name="gender1" value="female"> Feminino<br>
+
+
+				relação cliente segurado<br>
+				<select name="relacao" required>
+					<option value="A">A</option>
+					<option value="B">B</option>
+				</select><br>
+				Estado Civil<br>
+				<select name="ecivil" required>
+					<option value="A">A</option>
+					<option value="B">B</option>
+				</select><br>
+				
+				Profissão<br>
+				<input type="text" name="profiss"><br>
+				CEP<br>
+				<input type="text" name="cep" maxlength="9" value="nnnnn-nnn">
+				<br><br>Dados de residência chamados do CEP<br><br>
+				
+				Tipo de residencia<br>
+				<select name="residencia" required>
+					<option value="A">A</option>
+					<option value="B">B</option>
+				</select><br>
+				
+				o carro dorme aqui?<br>
+				<input type="radio" name="gender1" value="sim1" checked> Sim
+	  			<input type="radio" name="gender1" value="nao1"> Não<br>
+				<!--Se sim: passa-->
+				<!--Se não: Dados da residência noturna do carro-->               
+					CEP<br>
+					<input type="text" name="cep" maxlength="9" value="nnnnn-nnn">
+					<br><br>Dados de residência chamados do CEP<br><br>
+					
+					Tipo de residencia<br>
+					<select name="residencia" required>
+						<option value="A">A</option>
+						<option value="B">B</option>
+					</select><br>
+
+
+
+				tem alguem entre 18 e 25 anos que resida com voce?<br>
+				<input type="radio" name="gender1" value="sim2" checked> Sim
+	  			<input type="radio" name="gender1" value="nao2"> Não<br>
+
+	  			<input type="submit" name="enviar" value="Prosseguir">
+		</form>
+
+</body>
+</html>
