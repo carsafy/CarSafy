@@ -33,7 +33,7 @@ class SeguradoDados(models.Model):
         on_delete=models.PROTECT,
         verbose_name="CPF"
     )
-    sexo = models.CharField(max_length=1)
+    genero = models.CharField(max_length=10)
     data_nascimento = models.DateField()
 
     def __str__(self):
@@ -43,7 +43,9 @@ class SeguradoDados(models.Model):
 # quem está utilizando a plataforma para fazer cotação
 class Usuario(models.Model):
     nome = models.CharField(max_length=100)
-    sexo = models.CharField(max_length=1)
+    genero = models.CharField(max_length=10)
+    telefones = models.ManyToManyField(Telefone, verbose_name="Telefone", blank=True)
+    emails = models.ManyToManyField(Email, verbose_name="Email", blank=True)
     segurado = models.ForeignKey(
         Segurado,
         on_delete=models.CASCADE,
@@ -76,7 +78,7 @@ class Condutor(models.Model):
     relacao = models.CharField(max_length=15)
     cpf = models.CharField(max_length=11)
     nome = models.CharField(max_length=100)
-    sexo = models.CharField(max_length=1)
+    genero = models.CharField(max_length=10)
     estado_civil = models.CharField(max_length=15)
     residencia = models.CharField(max_length=30)
     profissao = models.CharField(max_length=50)
