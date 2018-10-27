@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+	<title>Dados Pessoais</title>
+
+    <!-- Google Analitcs -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125829147-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-125829147-1');
+	</script>
+</head>
+<body>
+	<form method="POST">
+		{% csrf_token %}
+
+        <!--mensagens para debugar o cadastro de informações,
+        peço que deixe as mesmas em algum local da pag ou comentadas-->
+        <p> Cadastro telefone 1: {{mensagem_telefone}}</p>
+        <p> Cadastro telefone 2: {{mensagem_telefone2}}</p>
+        <p> Cadastro email 1: {{mensagem_email}}</p>
+        <p> Cadastro email 2: {{mensagem_email2}}</p>
+        <p> Cadastro usuario: {{mensagem_usuario}}</p>
+        <p> Cadastro email usuario: {{mensagem_email3}}</p>
+        <p> Cadastro telefone usuario: {{mensagem_telefone3}}</p>
+
+		Nome completo:<br>
+		<input type="text" name="nome" maxlength="50" required=""><br>
+		
+		Sexo:<br>
+		<input type="radio" name="genero" value="masculino" checked> Masculino
+  		<input type="radio" name="genero" value="feminino"> Feminino<br>
+
+		e-mail:<br>
+		<input type="email" name="e-mail" maxlength="50" required=""><br>
+
+		Telefone:<br>
+		<input type="tel" name="telefone" maxlength="30" required=""><br>
+
+		<input type="submit">
+
+	</form>
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+	<script type='text/javascript'>
+		(function(){
+			var widget_id = 'zEs79zs2iS';
+			var d=document;
+			var w=window;
+			function l(){
+				var s = document.createElement('script');
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = '//code.jivosite.com/script/widget/'+widget_id;
+				var ss = document.getElementsByTagName('script')[0];
+				ss.parentNode.insertBefore(s, ss);
+			}
+			if(d.readyState=='complete'){
+				l();
+			}else{
+				if(w.attachEvent){
+					w.attachEvent('onload',l);
+				}else{
+					w.addEventListener('load',l,false);
+				}
+			}
+		})();
+	</script>
+
+</body>
+</html>
