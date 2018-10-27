@@ -33,12 +33,15 @@
 	<main>
 	
 	<!-- {/literal} END JIVOSITE CODE -->
-		<div class="pink lighten-4" style="height:91vh">
+
+
+		<div class="pink lighten-4" style="height:92vh">
 			
-			<button style="margin-top: 50px"><a href="cotacao"> Fazer cotação </a></button>
-			<h1>Faça a cotação do seu veículo</h1>	
+			<h1 class="mt-0 pr-5 pt-5 text-right" >Faça a cotação do seu veículo</h1>	
 
 		</div>
+
+		
 		<!--Seção de coberturas-->
 		<div style="height:100vh">
 				
@@ -46,7 +49,7 @@
 				<div class="row center-aling">		
 					<div class="col 3">
 						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
+							<div class="card-image waves-effect">
 								<img class="activator" src='{% static "core/img/app.svg" %}' alt="Acidente Pessoal de Passageiros" width="150px" height="150px">
 							</div>
 							<div class="card-content">
@@ -61,7 +64,7 @@
 					<div class="col 3">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img src='{% static "core/img/alagamento.svg" %}' alt="Alagamento" width="150px" height="150px">
+								<img class="activator" src='{% static "core/img/alagamento.svg" %}' alt="Alagamento" width="150px" height="150px">
 							</div>
 							<div class="card-content">
 								<span class="card-content activator grey-text text-darken-4">Alagamento<i class="material-icons right">more_vert</i></span>		
@@ -76,7 +79,7 @@
 					<div class="col 3">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img src='{% static "core/img/pt.svg"%}' alt="Perca Total" width="150px" height="150px">										</div>
+								<img class="activator" src='{% static "core/img/pt.svg"%}' alt="Perca Total" width="150px" height="150px">										</div>
 							<div class="card-content">
 								<span class="card-content activator grey-text text-darken-4">Perca Total<i class="material-icons right">more_vert</i></span>		
 							</div>
@@ -90,7 +93,7 @@
 					<div class="col 3">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light">
-								<img src='{% static "core/img/dc.svg" %}' alt="Danos Corporais a Terceiros" width="150px" height="150px">										</div>
+								<img class="activator" src='{% static "core/img/dc.svg" %}' alt="Danos Corporais a Terceiros" width="150px" height="150px">										</div>
 							<div class="card-content">
 								<span class="card-content activator grey-text text-darken-4">Danos Corporais a Terceiros<i class="material-icons right">more_vert</i></span>		
 							</div>
@@ -107,7 +110,7 @@
 							<div class="col 6">
 								<div class="card">
 									<div class="card-image waves-effect waves-block waves-light">
-										<img src='{% static "core/img/carro-reserva.svg"%}' alt="Carro Reserva" width="150px" height="150px">
+										<img class="activator" src='{% static "core/img/carro-reserva.svg"%}' alt="Carro Reserva" width="150px" height="150px">
 									</div>
 									<div class="card-content">
 										<span class="card-content activator grey-text text-darken-4">Carro Reserva<i class="material-icons right">more_vert</i></span>		
@@ -121,7 +124,7 @@
 							<div class="col 3">
 								<div class="card">
 									<div class="card-image waves-effect waves-block waves-light">
-										<img src='{% static "core/img/chaveiro.svg"%}' alt="Chaveiro" width="150px" height="150px">
+										<img class="activator" src='{% static "core/img/chaveiro.svg"%}' alt="Chaveiro" width="150px" height="150px">
 									</div>
 									<div class="card-content">
 										<span class="card-content activator grey-text text-darken-4">Chaveiro<i class="material-icons right">more_vert</i></span>		
@@ -139,28 +142,20 @@
 
 		<!--Texto sobre informações-->
 
-		<div class="cyan lighten-1 valign-wrapper" style="height:100vh">
-			<section>
-				<div class="row">
-					<div class="col 9 offset-l1">
-						<h2 class="white-text">Porque fazer um seguro auto?</h2>
+		<div class="container-fluid cyan lighten-1" style="height:100vh">
+				<div class="media ml-3">
+					<div class="media-body">
+						<h2 class="white-text mt-15">Porque fazer um seguro auto?</h2>
+						<p class="white-text h3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
 					</div>
+					<img class="mr-3 ml-3 align-self-center" src='{% static "core/img/carro-protegido.jpg"%}' alt="Porque fazer seguro auto">
 				</div>
-				<div class="row">
-					<div style="font-size: 25px" class="col l8 white-text">
-						<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-					</div>
-					<div class="col l4">
-						<img class="responsive-img" src='{% static "core/img/carro-protegido.jpg"%}' alt="Porque fazer seguro auto">
-					</div>
-				</div>
-			</section>
 		</div>
 		
 		<!--Seguradoras parceiras-->
 		<div style="height:80vh">
 			<section>
-				<h2 style="padding: 40px" class="center-align">Seguradoras parceiras</h2>
+				<h2 class="center-align">Seguradoras parceiras</h2>
 				<ul>
 					<div class="row center-align">
 						<div style="padding: 40px" class="col l6  left-align valign-wrapper">
