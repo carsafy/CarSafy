@@ -15,11 +15,11 @@
 	</script>
 </head>
 <body>
-	<form method="POST" action="dados-segurado/">
+	<form method="POST" action="segurado/">
 		{% csrf_token %}
 
 		Nome completo:<br>
-		<input type="text" name="nome" maxlength="50" required=""><br>
+		<input type="text" name="nome" maxlength="100" required=""><br>
 		
 		Sexo:<br>
 		<input type="radio" name="genero" value="masculino" checked> Masculino

@@ -3,7 +3,7 @@ from .models import Usuario, Telefone, Email
 
 
 def usuario(request):
-    return render(request, 'cotacao/dados_usuario.html')
+    return render(request, 'cotacao/usuario.html')
 
 
 def segurado(request):
@@ -81,3 +81,11 @@ def segurado(request):
 
     else:
         return redirect('cotacao_usuario')
+
+
+def veiculo(request):
+
+    # if request.method == POST:
+
+
+    return render(request, 'cotacao/veiculo.html')

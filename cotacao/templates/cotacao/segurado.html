@@ -7,55 +7,60 @@
 </head>
 <body>
 
-	<form>
+<!--mensagens para debugar o cadastro de informações,
+peço que deixe as mesmas em algum local da pag ou comentadas-->
+<p> Cadastro telefone 1: {{mensagem_telefone}}</p>
+<p> Cadastro telefone 2: {{mensagem_telefone2}}</p>
+<p> Cadastro email 1: {{mensagem_email}}</p>
+<p> Cadastro email 2: {{mensagem_email2}}</p>
+<p> Cadastro usuario: {{mensagem_usuario}}</p>
+<p> Cadastro email usuario: {{mensagem_email3}}</p>
+<p> Cadastro telefone usuario: {{mensagem_telefone3}}</p>
 
-		<!--mensagens para debugar o cadastro de informações,
-        peço que deixe as mesmas em algum local da pag ou comentadas-->
-        <p> Cadastro telefone 1: {{mensagem_telefone}}</p>
-        <p> Cadastro telefone 2: {{mensagem_telefone2}}</p>
-        <p> Cadastro email 1: {{mensagem_email}}</p>
-        <p> Cadastro email 2: {{mensagem_email2}}</p>
-        <p> Cadastro usuario: {{mensagem_usuario}}</p>
-        <p> Cadastro email usuario: {{mensagem_email3}}</p>
-        <p> Cadastro telefone usuario: {{mensagem_telefone3}}</p>
+<form method="POST" action="/cotacao/veiculo/">
 
 		{% csrf_token %}
 
 		Você é o segurado?<br>
-		<input type="radio" name="segurado" value="Sim" checked> Sim
-  		<input type="radio" name="segurado" value="Nao"> Nao<br>
-			<!-- so aparecem se a resposta de pergunta acima for não, caso contrario aparecem preenchidos-->
+		<input type="radio" name="segurado" value="sim" checked> Sim
+  		<input type="radio" name="segurado" value="nao"> Nao<br>
+
+            <!-- so aparecem se a resposta de pergunta acima for não, caso contrario aparecem preenchidos-->
 	  		Nome completo do segurado:<br>
-			<input type="text" name="Nome Completo" maxlength="50" required=""><br>
+			<input type="text" name="nome" maxlength="100" required=""><br>
 			Sexo do segurado:<br>
-			<input type="radio" name="gender" value="male" checked> Masculino
-	  		<input type="radio" name="gender" value="female"> Feminino<br>
+			<input type="radio" name="genero" value="masculino" checked> Masculino
+	  		<input type="radio" name="genero" value="feminino"> Feminino<br>
 
 
-	  		CPF/CNPJ:<br>
-	  		<input type="text" name="cpf/cnpj" required><br>
+        CPF/CNPJ:<br>
+        <input type="text" name="cpf/cnpj" required><br>
 
-	  		Data de Nascimento:<br>
-	  		<input type="date" name="bday" required><br>
+        Data de Nascimento:<br>
+        <input type="date" name="nascimento" required><br>
 
-	  		Seguro Novo?<br>
-	  		<input type="radio" name="novo" value="yes" checked> Sim
-	  		<input type="radio" name="novo" value="no"> Não<br>
-	  			<!--caso a resposta seja sim, prosseguir, se não: -->
-	  			vigência do seguro anterior(término)<br>
-	  			<input type="date" name="vigência" required><br>
-	  			
-	  			Seguradora:<br>
-	  			<input type="text" name="seguradora" required><br>
-	  			
-	  			Classe de Bônus:<br>
-	  			<input type="number" name="bonusqtd" min="0" max="10" value="0" required><br>
-	  			
-	  			Numero de Sinistros:<br>
-	  			<input type="number" name="Sinistrosqtd" min="0" value="0" required><br><br>
-	  			
-	  			<input type="submit" name="enviar" value="Prosseguir">
-	</form>
+        Seguro Novo?<br>
+        <input type="radio" name="renovacao" value="sim" checked> Sim
+        <input type="radio" name="renovacao" value="nao"> Não<br>
+            <!--caso a resposta seja sim, prosseguir, se não: -->
+            Qual o término da vigência do seu Seguro?<br>
+            <input type="date" name="termino_vigencia" required><br>
+
+            Seguradora:<br>
+            <input type="text" name="seguradora" required><br>
+
+            Classe de bônus do Seguro anterior<br>
+            <input type="number" name="bonus" min="0" max="10" value="0" required><br>
+
+            Numero de Sinistros:<br>
+            <input type="number" name="qnt_sinistro" min="0" value="0" required><br><br>
+
+        <!--input para teste-->
+        <input type="hidden" name="id" value="123" />
+
+    <input type="submit" name="enviar" value="Prosseguir">
+
+</form>
 
 
 </body>
