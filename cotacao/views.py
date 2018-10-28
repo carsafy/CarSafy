@@ -3,6 +3,10 @@ from .models import Usuario, Telefone, Email
 
 
 def usuario(request):
+    return render(request, 'cotacao/dados_usuario.html')
+
+
+def segurado(request):
     mensagem = {}
     telefone = {}
     email = {}
@@ -73,10 +77,7 @@ def usuario(request):
             else:
                 mensagem['mensagem_telefone3'] = "Cadastro do telefone no cliente realizado com sucesso"
 
-        return redirect('cotacao_segurado')
+        return render(request, 'cotacao/segurado.html', mensagem)
 
-    return render(request, 'cotacao/dados_usuario.html', mensagem)
-
-
-def segurado(request):
-    return render(request, 'cotacao/segurado.html')
+    else:
+        return redirect('cotacao_usuario')

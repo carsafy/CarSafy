@@ -15,18 +15,8 @@
 	</script>
 </head>
 <body>
-	<form method="POST">
+	<form method="POST" action="dados-segurado/">
 		{% csrf_token %}
-
-        <!--mensagens para debugar o cadastro de informações,
-        peço que deixe as mesmas em algum local da pag ou comentadas-->
-        <p> Cadastro telefone 1: {{mensagem_telefone}}</p>
-        <p> Cadastro telefone 2: {{mensagem_telefone2}}</p>
-        <p> Cadastro email 1: {{mensagem_email}}</p>
-        <p> Cadastro email 2: {{mensagem_email2}}</p>
-        <p> Cadastro usuario: {{mensagem_usuario}}</p>
-        <p> Cadastro email usuario: {{mensagem_email3}}</p>
-        <p> Cadastro telefone usuario: {{mensagem_telefone3}}</p>
 
 		Nome completo:<br>
 		<input type="text" name="nome" maxlength="50" required=""><br>
