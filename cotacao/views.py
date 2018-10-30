@@ -3,6 +3,7 @@ from .models import Usuario, Telefone, Email
 
 
 def usuario(request):
+    request.session['nome'] = "Tiago Miguel"
     return render(request, 'cotacao/usuario.html')
 
 
@@ -12,6 +13,7 @@ def segurado(request):
     email = {}
     usuario = {}
 
+    mensagem['eu'] = request.session.get('nome')
     if request.method == 'POST':
         # verificando se existe algum telefone ja cadastrado
         try:
