@@ -1,20 +1,23 @@
 from django.shortcuts import render, redirect
-from .models import Usuario, Telefone, Email
-
+from .models import (
+    Usuario,
+    Telefone,
+    Email,
+    Segurado,
+    SeguradoDados
+)
 
 def usuario(request):
-    request.session['nome'] = "Tiago Miguel"
     return render(request, 'cotacao/usuario.html')
 
 
 def segurado(request):
-    mensagem = {}
-    telefone = {}
-    email = {}
-    usuario = {}
-
-    mensagem['eu'] = request.session.get('nome')
     if request.method == 'POST':
+        mensagem = {}
+        telefone = {}
+        email = {}
+        usuario = {}
+
         # verificando se existe algum telefone ja cadastrado
         try:
             telefone['numero'] = str(request.POST.get('telefone'))
@@ -54,6 +57,8 @@ def segurado(request):
             usuario['nome'] = request.POST.get('nome')
             usuario['genero'] = request.POST.get('genero')
             novo_usuario = Usuario.objects.create(**usuario)
+
+            request.session['usuario_id'] = novo_usuario.id  # armazenando o id do usuário
         except Exception as e:
             mensagem['mensagem_usuario'] = e
         else:
@@ -80,14 +85,49 @@ def segurado(request):
                 mensagem['mensagem_telefone3'] = "Cadastro do telefone no cliente realizado com sucesso"
 
         return render(request, 'cotacao/segurado.html', mensagem)
-
     else:
         return redirect('cotacao_usuario')
 
 
 def veiculo(request):
+    if request.method == 'POST':
+        mensagem = {}
+        usuario_id = request.session.get('usuario_id')
 
-    # if request.method == POST:
+        # verificação se o CPF já foi cadastrado
+        try:
+            Segurado.objects.get(cpf=request.POST.get('cpf'))
+
+        except Exception as e:
+            mensagem['cpf'] = str(e)
+            segurado_dados = {}
+            segurado = {}
+
+            # verificando se Segurado == usuário
+            if request.POST.get('segurado') == 'sim':
+                usuario = Usuario.objects.get(id=usuario_id)  # recuperando informações do usuario
+
+                segurado_dados['nome'] = usuario.nome
+                segurado_dados['genero'] = usuario.genero
+            else:
+                segurado_dados['nome'] = request.POST.get('nome')
+                segurado_dados['genero'] = request.POST.get('genero')
+
+            segurado_dados['data_nascimento'] = request.POST.get()
+
+            novo_segurado_dados = SeguradoDados.objects.create(**segurado_dados)
+
+            segurado['cpf'] = request.POST.get('cpf')
+
+            if segurado['cpf'].__len__() == 11:
+                segurado['pessoa_fisica'] = True
+            else:
+                segurado['pessoa_fisica'] = False
+
+            novo_segurado = Segurado.objects.create(**segurado)
 
 
-    return render(request, 'cotacao/veiculo.html')
+
+        return render(request, 'cotacao/veiculo.html')
+
+    return redirect('cotacao_usuario')

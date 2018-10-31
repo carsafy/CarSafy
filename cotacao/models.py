@@ -22,7 +22,7 @@ class Segurado(models.Model):
     emails = models.ManyToManyField(Email, verbose_name="Email", blank=True)
 
     def __str__(self):
-        return str(self.cpf) + " - " + str(self.seguradodados_set.last().nome)
+        return str(self.cpf)  # + " - " + str(self.seguradodados_set.last().nome)
 
 
 # demais informações do Segurado
@@ -31,7 +31,9 @@ class SeguradoDados(models.Model):
     cpf = models.ForeignKey(
         Segurado,
         on_delete=models.PROTECT,
-        verbose_name="CPF"
+        verbose_name="CPF",
+        blank=True,
+        null=True
     )
     genero = models.CharField(max_length=10)
     data_nascimento = models.DateField()
