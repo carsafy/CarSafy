@@ -51,7 +51,6 @@ class Usuario(models.Model):
     segurado = models.ForeignKey(
         Segurado,
         on_delete=models.CASCADE,
-        blank=True, null=True
     )
 
     def __str__(self):
