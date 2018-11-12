@@ -3,12 +3,46 @@
 <html>
 <head>
 	<title>Dados Pessoais</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+<!-- BEGIN JIVOSITE CODE {literal}-->
+<script type='text/javascript'>
+	(function(){
+		var widget_id = 'zEs79zs2iS';
+		var d=document;
+		var w=window;
+		function l(){
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = '//code.jivosite.com/script/widget/'+widget_id;
+			var ss = document.getElementsByTagName('script')[0];
+			ss.parentNode.insertBefore(s, ss);
+		}
+		if(d.readyState=='complete'){
+			l();
+		}else{
+			if(w.attachEvent){
+				w.attachEvent('onload',l);
+			}else{
+				w.addEventListener('load',l,false);
+			}
+		}
+	})();
+</script>
+
+<!-- Google Analitcs -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125829147-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-125829147-1');
+</script>
 </head>
 
 <body>
 	<form method="POST" action="segurado/">
-		<div hidden>{% csrf_token %}</div>
+	{% csrf_token %}
 		
 		<div>
 			Nome completo:<br>
@@ -38,43 +72,6 @@
 	</form>
 
 </body>
-
-<!--
- BEGIN JIVOSITE CODE {literal}
-<script type='text/javascript'>
-	(function(){
-		var widget_id = 'zEs79zs2iS';
-		var d=document;
-		var w=window;
-		function l(){
-			var s = document.createElement('script');
-			s.type = 'text/javascript';
-			s.async = true;
-			s.src = '//code.jivosite.com/script/widget/'+widget_id;
-			var ss = document.getElementsByTagName('script')[0];
-			ss.parentNode.insertBefore(s, ss);
-		}
-		if(d.readyState=='complete'){
-			l();
-		}else{
-			if(w.attachEvent){
-				w.attachEvent('onload',l);
-			}else{
-				w.addEventListener('load',l,false);
-			}
-		}
-	})();
-</script>
-
- Google Analitcs
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125829147-1"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-125829147-1');
-</script>-->
 
 </html>
 

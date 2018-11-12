@@ -4,7 +4,6 @@
 <html>
 <head>
     <title>Dados do Segurado</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
@@ -21,7 +20,7 @@ peço que deixe as mesmas em algum local da pag ou comentadas
 -->
 
 <form method="POST" action="/cotacao/veiculo/">
-    <div hidden>{% csrf_token %}</div>
+    {% csrf_token %}
 
     <div>
         Você é o segurado?<br>
