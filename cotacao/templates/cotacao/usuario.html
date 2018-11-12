@@ -3,63 +3,78 @@
 <html>
 <head>
 	<title>Dados Pessoais</title>
-
-    <!-- Google Analitcs -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125829147-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-125829147-1');
-	</script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
 	<form method="POST" action="segurado/">
-		{% csrf_token %}
-
-		Nome completo:<br>
-		<input type="text" name="nome" maxlength="100" required=""><br>
+		<div hidden>{% csrf_token %}</div>
 		
-		Sexo:<br>
-		<input type="radio" name="genero" value="masculino" checked> Masculino
-  		<input type="radio" name="genero" value="feminino"> Feminino<br>
+		<div>
+			Nome completo:<br>
+			<input type="text" name="nome" maxlength="100" required=""><br>
+		</div>
+		
+		<div>
+			Sexo:<br>
+			<input type="radio" name="genero" value="masculino" required> Masculino
+  			<input type="radio" name="genero" value="feminino" required> Feminino<br>
+		</div>
 
-		e-mail:<br>
-		<input type="email" name="e-mail" maxlength="50" required=""><br>
+		<div>
+			e-mail:<br>
+			<input type="email" name="e-mail" maxlength="50" required=""><br>
+		</div>
+		
+		<div>
+			Telefone:<br>
+			<input type="tel" name="telefone" maxlength="30" required=""><br>
+		</div>
 
-		Telefone:<br>
-		<input type="tel" name="telefone" maxlength="30" required=""><br>
-
-		<input type="submit">
+		<div class="button">
+			<button type="submit">Vamos Continuar!!!</button>
+		</div>
 
 	</form>
 
-<!-- BEGIN JIVOSITE CODE {literal} -->
-	<script type='text/javascript'>
-		(function(){
-			var widget_id = 'zEs79zs2iS';
-			var d=document;
-			var w=window;
-			function l(){
-				var s = document.createElement('script');
-				s.type = 'text/javascript';
-				s.async = true;
-				s.src = '//code.jivosite.com/script/widget/'+widget_id;
-				var ss = document.getElementsByTagName('script')[0];
-				ss.parentNode.insertBefore(s, ss);
-			}
-			if(d.readyState=='complete'){
-				l();
-			}else{
-				if(w.attachEvent){
-					w.attachEvent('onload',l);
-				}else{
-					w.addEventListener('load',l,false);
-				}
-			}
-		})();
-	</script>
-
 </body>
+
+<!--
+ BEGIN JIVOSITE CODE {literal}
+<script type='text/javascript'>
+	(function(){
+		var widget_id = 'zEs79zs2iS';
+		var d=document;
+		var w=window;
+		function l(){
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = '//code.jivosite.com/script/widget/'+widget_id;
+			var ss = document.getElementsByTagName('script')[0];
+			ss.parentNode.insertBefore(s, ss);
+		}
+		if(d.readyState=='complete'){
+			l();
+		}else{
+			if(w.attachEvent){
+				w.attachEvent('onload',l);
+			}else{
+				w.addEventListener('load',l,false);
+			}
+		}
+	})();
+</script>
+
+ Google Analitcs
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125829147-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-125829147-1');
+</script>-->
+
 </html>
+
