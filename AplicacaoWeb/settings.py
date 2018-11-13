@@ -129,4 +129,5 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     'core/statics',
+    'cotacao/statics',
 ]
