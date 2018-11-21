@@ -7,6 +7,7 @@
 <body>
 
 	<form>
+		
 		Garagem na residência?<br>
 		<input type="radio" name="garresd" value="Sim"> Sim
   		<input type="radio" name="garresd" value="Nao" checked> Nao<br>
@@ -25,18 +26,18 @@
 					<option value="B">B</option>
 		</select><br>
 
-
 		Quantidade de Veículos na Residência<br>
 		<input type="number" name="Nvel" min="0"><br>
         
         Distancia do Serviço<br>
         <input type="text" name="disserv"><br>
-        Km mensal<br>
+		
+		Km mensal<br>
 		<input type="text" name="kmensal"><br>
         
         vitima de roubo/furto<br>
-        <input type="radio" name="robfurt" value="Sim"> Sim
-  		<input type="radio" name="robfurt" value="Nao" checked> Nao<br>
+        <input type="radio" name="robfurt" value="Sim" required> Sim
+  		<input type="radio" name="robfurt" value="Nao" checked required> Nao<br>
 
 	</form>
 
